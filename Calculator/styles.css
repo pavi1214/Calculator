@@ -1,0 +1,59 @@
+body {
+    background-color: rgb(167, 203, 188);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Stack heading and calculator vertically */
+    align-items: center; /* Center children horizontally */
+    height: 100vh; /* Full viewport height */
+    justify-content: center; /* Center children vertically within the viewport */
+}
+
+h4 {
+    color: rgb(28, 75, 187);
+    font-size: 75px; /* Adjust the size as needed */
+    margin: 20px 0; /* Margin to create some space around the heading */
+    text-align: center; /* Center text horizontally */
+}
+
+.calculator {
+    width: 400px; /* Width of the calculator */
+    background-color: #c73cd1;
+    padding: 10px; /* Padding inside the calculator */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px; /* Space between buttons */
+}
+
+button {
+    width: 100%;
+    height: 60px; /* Height of buttons */
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 20px; /* Font size of buttons */
+}
+
+button:hover {
+    background-color: #ccc;
+}
+
+#display {
+    width: 100%;
+    height: 60 px; /* Height of display */
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px; /* Padding inside display */
+    font-size: 36px; /* Font size of display */
+    text-align: right;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
